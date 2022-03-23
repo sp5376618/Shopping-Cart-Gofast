@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>GoFast</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="home" class="header">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="navigation container">
+        <div class="logo">
+          <h1><a href="index.html">GoFast!</a></h1>
+        </div>
+
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>GoFast!</h1>
+            </div>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+          
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link scroll-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="sign.html" class="nav-link">Register</a>
+            </li>
+			     <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>
+            <div onclick="setBg()">
+            <li class="nav-item" id="closecart">
+              <a href="#" class="nav-link icon"><ion-icon name="basket" class="fa fa-shopping-cart"><span class="unique">0</span></ion-icon></a>
+            </li>
+            </div>
+            <div id="closecart" class="boxcart">
+            <div class="closeevent"></div>
+          </div>
+          </ul>
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <i class="bx bx-shopping-bag"></i>
+        </a>
+
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <img id="diss" src="./images/advert5.png" alt="" class="hero-img" />	
+
+    <div class="hero-content">
+      <h2><span class="discount">70% </span> SALE OFF</h2>
+      <h1>
+        <span>Festival Vibes</span>
+        <span>mode on!</span>
+      </h1>
+      <a class="btn" href="product.html">shop now</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+	<a href="product.html">
+    <section class="advert section">
+      <div class="advert-center container">
+        <div class="advert-box">
+          <div class="dotted">
+            <div class="content">
+              <h2>
+                Womens <br />
+                Clothing
+              </h2>
+              <h4>Upto 50% OFF</h4>
+            </div>
+          </div>
+          <img src="./images/advert1.png" alt="">
+        </div>
+
+        <div class="advert-box">
+          <div class="dotted">
+            <div class="content">
+              <h2>
+                Gadgets &  <br />
+                Appliences
+              </h2>
+              <h4>Switch To New Gears</h4>
+            </div>
+          </div>
+          <img class="two" src="./images/advert9.png" alt="">
+        </div>
+
+        <div class="advert-box">
+          <div class="dotted">
+            <div class="content">
+              <h2>
+                Mens <br />
+                Clothing
+              </h2>
+              <h4>Upto 30% OFF</h4>
+            </div>
+          </div>
+          <img src="./images/banner.png" alt="">
+        </div>
+      </div>
+    </section>
+	</a>
+    <!-- Featured -->
+    <section class="section featured">
+      <div class="title">
+        <h1>Featured Products</h1>
+      </div>
+
+      <div class="product-center container">
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic7.jpg" alt="">
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html">
+              <h3>Boy’s T-Shirt</h3>
+            </a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$40</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic9.jpg" alt="">
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span class="bx bx-shopping-bag"></span>>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Boy’s Sweatshirts</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$70</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic3.jpg" alt="">
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Girl's T-Shirt</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$30</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic10.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Girl's Sweater</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <h4 class="price">$90</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Latest -->
+    <section class="section featured">
+      <div class="title">
+        <h1>Latest Products</h1>
+      </div>
+
+      <div class="product-center container">
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic17.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Kids Shoes</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$20</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic2.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Girls Top</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$80</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic1.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Girls T-Shirt</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$90</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic11.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Boy’s Sweatshirts</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <h4 class="price">$150</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic11.png" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Boy’s Jackets</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$90</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic13.jpg" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Boy’s Shoes</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$60</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/pic14.png" alt="">
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Kids watches</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$30</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+           <img src="./images/pic.jpg" alt=""/>
+
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="removecart()"><i class="bx bxs-x-circle"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="product-details.html"><h3>Kids Jewellery Set</h3></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">$350</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Banner -->
+    <section class="section">
+      <div class="product-banner">
+        <div class="left">
+          <a href="product.html"><img src="./images/pic16.jpg" alt="" /></a>
+        </div>
+        <div class="right">
+          <div class="content">
+            <h2><span class="discount">70% </span> SALE OFF</h2>
+            <h1>
+              <span>Great Indian</span>
+              <span>Diwali Festival</span>
+            </h1>
+            <a class="btn" href="product.html">shop now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="testimonial-center container">
+        <div class="testimonial">
+          <span>&ldquo;</span>
+          <p>
+            Good products of natural health any other company its better so i recommended to other using this products.
+          </p>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <div class="img-cover">
+            <img src="./images/profile5.jpg" alt="" />
+          </div>
+          <h4>Lori Anderson</h4>
+        </div>
+        <div class="testimonial">
+          <span>&ldquo;</span>
+          <p>
+            I love this app! It does just what I need, and it's free! I love the star-rating system, and the reviews are simple to leave and display.
+          </p>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <div class="img-cover">
+            <img src="./images/profile6.jpg" alt="" />
+          </div>
+          <h4>Daniel Cesar</h4>
+        </div>
+        <div class="testimonial">
+          <span>&ldquo;</span>
+          <p>
+            Decent review app since its completely free but its missing a lot of features that other apps out there have. 
+          </p>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <div class="img-cover">
+            <img src="./images/profile3.jpg" alt="" />
+          </div>
+          <h4>Jenny Clinton</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="section">
+      <div class="brands-center container">
+        <div class="brand">
+          <img src="./images/brand1.png" alt="" />
+        </div>
+        <div class="brand">
+          <img src="./images/brand9.png" alt="" />
+        </div>
+        <div class="brand">
+          <img src="./images/brand5.png" alt="" />
+        </div>
+        <div class="brand">
+          <img src="./images/brand2.png" alt="" />
+        </div>
+        <div class="brand">
+          <img src="./images/brand6.png" alt="" />
+        </div>
+        <div class="brand">
+          <img src="./images/brand3.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          
+          <a href="#">Specials</a>
+          <a href="https://goo.gl/maps/9t9RVHeM2npy7He29">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="about.html">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="product-details.html">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            30 Palm House, Noida, Delhi, India
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            admin@gofast.co.in
+		  </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            +91-8754343234
+          </div>
+          <div>
+            <span <a href="https://goo.gl/maps/pAviDdCLFnArcrrm7">
+              <i class="far fa-paper-plane"></i>
+            </span></a>
+            Delhi,India
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
